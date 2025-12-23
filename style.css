@@ -1,0 +1,116 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'AmoreChristmas';
+    src: url('Amore_Christmas.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} 
+
+h1{
+    color: #515A47 ; 
+    text-align: center;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+h2{color: #8C2F39 ;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h4{color:#02111B ;
+    text-align: center;
+}
+
+body {
+    background-color: #EAE3C6;
+    font-family: 'AmoreChristmas', 'Segoe UI', system-ui, Arial, sans-serif;
+}
+
+.cats{
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.letter_cats{
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border: 6px solid transparent;
+    border-radius: 8px;
+    padding: 6px;
+    border-image: repeating-linear-gradient(45deg, #C62A29 0 12px, #0A7A3F 12px 24px) 1;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.04) inset;
+}
+
+.answerbuttons{
+    text-align: center;
+    word-spacing: 20px;
+}
+
+.links{
+    text-decoration: none;
+    color: #02111B ;
+    padding: 15px 26px;
+    border: 2px solid #02111B;
+    border-radius: 5px;
+    background-color: #EAE3C6
+}
+
+.open{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 28px;
+    background: linear-gradient(90deg,#C62A29,#0A7A3F);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+    transition: transform .15s ease, box-shadow .15s ease;
+    display:inline-block;
+}
+
+.open:hover{ transform: translateY(-3px); box-shadow: 0 14px 34px rgba(0,0,0,0.22);} 
+
+a:hover{
+    color:dimgrey;
+    border: 2px solid dimgrey;
+}
+
+/* letter styles */
+.letter-page{ padding: 18px 16px; }
+.letter{
+    max-width: 720px;
+    margin: 24px auto;
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,250,245,0.98));
+    padding: 28px 28px 24px 28px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(2,17,27,0.06);
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #222;
+    line-height: 1.65;
+}
+.letter h1{ font-size: 1.6rem; margin-top: 0; color: #C62A29; }
+.signature{ margin-top: 20px; text-align: right; font-weight:700; color:#0A7A3F; }
+
+/* print-friendly */
+@media print{
+    body{ background: #fff; }
+    .letter{ box-shadow:none; border-radius:0; }
+}
+
+/* small screens */
+@media (max-width:480px){
+    .letter{ padding: 18px; margin: 18px; }
+    .letter h1{ font-size: 1.2rem; }
+}
